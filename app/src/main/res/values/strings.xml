@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ThiBangLaiXe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_50_c_u_hay_sai">50 câu hay sai</string>
+    <string name="thi_thử">Thi thử</string>
+    <string name="l_u">Lưu</string>
+    <string name="thi_th">Thi thử</string>
+    <string name="c_u_sai">Câu sai</string>
+    <string name="sa_h_nh">Sa hình</string>
+    <string name="m_o">Mẹo</string>
+    <string name="bi_n_b_o">Biển báo</string>
+    <string name="tr_gi_p">Trợ giúp</string>
+    <string name="ti_n_n_t_p">Tiến độ ôn tập</string>
+    <string name="bi_n_b_o_v_ng_b">Biển báo và đường bộ</string>
+    <string name="k_thu_t_l_i_xe">Kỹ thuật lái xe</string>
+    <string name="kh_i_ni_m_v_quy_t_c">Khái niệm và quy tắc</string>
+    <string name="o_t_o_l_i_xe">Đào tạo lái xe</string>
+    <string name="t_nh_tp">Tỉnh/TP</string>
+    <string name="ch_n">Chọn</string>
+    <string name="qu_n_huy_n">Quận/Huyện</string>
+    <string name="ph_ng_x">Phường/Xã</string>
+    <string name="n_i_b_t">Nổi bật</string>
+    <string name="title">OTOMOTO - B1</string>
+    <string name="info">Thông tin</string>
+    <string name="content_title">OTOMOTO - B1</string>
+    <string name="setting">Cài đặt</string>
+    <string name="test">Thi thử</string>
+</resources>

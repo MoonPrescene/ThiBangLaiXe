@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_bottom"
+    app:startDestination="@id/GPLX_Fragment">
+
+    <fragment
+        android:id="@+id/GPLX_Fragment"
+        android:name="com.example.thibanglaixe.ui.fragments.GPLX_Fragment"
+        android:label="fragment_g_p_l_x_"
+        tools:layout="@layout/fragment_g_p_l_x_" />
+    <fragment
+        android:id="@+id/training_Fragment"
+        android:name="com.example.thibanglaixe.ui.fragments.Training_Fragment"
+        android:label="fragment_training_"
+        tools:layout="@layout/fragment_training_" />
+    <fragment
+        android:id="@+id/informationFragment2"
+        android:name="com.example.thibanglaixe.ui.fragments.InformationFragment"
+        android:label="fragment_information_"
+        tools:layout="@layout/fragment_information_" />
+</navigation>
