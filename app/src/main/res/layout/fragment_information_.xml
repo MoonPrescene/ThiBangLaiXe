@@ -6,6 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/grey">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linear_layout_top"
             android:layout_width="match_parent"
@@ -16,16 +17,18 @@
             android:background="@color/white"
             tools:ignore="InvalidId">
             <ImageButton
+                android:id="@+id/buttonNotification"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:src="@drawable/ic_baseline_doorbell_24"
+                android:src="@drawable/ic_baseline_notifications_none_24"
                 android:textColor="@color/blue"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/white"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         <ScrollView
             android:layout_width="match_parent"
@@ -36,8 +39,9 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
+                android:id="@+id/loginButton"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <TextView
@@ -49,9 +53,62 @@
                     android:layout_marginEnd="15dp"
                     android:text="@string/info"
                     android:textColor="@color/black"
-                    android:textSize="26dp"
+                    android:textSize="26sp"
                     android:textStyle="bold"
                     tools:ignore="HardcodedText" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewUpgrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/blue"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/phi_n_b_n_pro"
+                                android:textSize="21sp"
+                                android:layout_margin="10dp"
+                                android:textColor="@color/white"
+                                />
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginBottom="15dp"
+                                app:cardCornerRadius="15dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/n_ng_c_p"
+                                    android:gravity="center"
+                                    android:textSize="16sp"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:textColor="@color/blue"/>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="150dp"
+                            android:src="@drawable/prize" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -65,6 +122,7 @@
                         android:orientation="vertical">
 
                         <LinearLayout
+                            android:id="@+id/buttonPenalty"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -127,6 +185,7 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:id="@+id/threeStep"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginTop="1dp"
@@ -180,7 +239,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="26dp"
+                                android:layout_marginStart="36dp"
                                 android:background="@android:color/transparent"
                                 android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
                         </LinearLayout>
@@ -199,6 +258,7 @@
                         android:orientation="vertical">
 
                         <LinearLayout
+                            android:id="@+id/facebook"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -236,6 +296,7 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:id="@+id/contactAdvertising"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -273,6 +334,7 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:id="@+id/reportError"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -312,6 +374,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewLogin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"

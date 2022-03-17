@@ -26,4 +26,9 @@
     <string name="content_title">OTOMOTO - B1</string>
     <string name="setting">Cài đặt</string>
     <string name="test">Thi thử</string>
+    <string name="van_hoa_dao_duc">Văn hoá và đạo đức</string>
+    <string name="title_test_fragment">Thi thử - GPLX A1</string>
+    <string name="phi_n_b_n_pro">Phiên bản Pro</string>
+    <string name="n_ng_c_p">Nâng cấp</string>
+    <string name="ng_nh_p">Đăng nhập</string>
 </resources>

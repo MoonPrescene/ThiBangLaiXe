@@ -7,17 +7,70 @@
 
     <fragment
         android:id="@+id/GPLX_Fragment"
-        android:name="com.example.thibanglaixe.ui.fragments.GPLX_Fragment"
+        android:name="com.example.thibanglaixe.ui.fragments.GPLXFragment"
         android:label="fragment_g_p_l_x_"
-        tools:layout="@layout/fragment_g_p_l_x_" />
+        tools:layout="@layout/fragment_g_p_l_x_" >
+        <action
+            android:id="@+id/action_GPLX_Fragment_to_testFragment"
+            app:destination="@id/testFragment" />
+        <action
+            android:id="@+id/action_GPLX_Fragment_to_pictureFragment"
+            app:destination="@id/pictureFragment" />
+        <action
+            android:id="@+id/action_GPLX_Fragment_to_tipFragment"
+            app:destination="@id/tipFragment" />
+    </fragment>
     <fragment
         android:id="@+id/training_Fragment"
-        android:name="com.example.thibanglaixe.ui.fragments.Training_Fragment"
+        android:name="com.example.thibanglaixe.ui.fragments.TrainingFragment"
         android:label="fragment_training_"
         tools:layout="@layout/fragment_training_" />
     <fragment
-        android:id="@+id/informationFragment2"
+        android:id="@+id/informationFragment"
         android:name="com.example.thibanglaixe.ui.fragments.InformationFragment"
         android:label="fragment_information_"
-        tools:layout="@layout/fragment_information_" />
+        tools:layout="@layout/fragment_information_" >
+        <action
+            android:id="@+id/action_informationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.thibanglaixe.ui.fragments.TestFragment"
+        android:label="TestFragment"
+        tools:layout="@layout/fragment_test">
+        <action
+            android:id="@+id/action_testFragment_to_GPLX_Fragment"
+            app:destination="@id/GPLX_Fragment"
+            app:popUpTo="@id/GPLX_Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/pictureFragment"
+        android:name="com.example.thibanglaixe.ui.fragments.PictureFragment"
+        android:label="PictureFragment"
+        tools:layout="@layout/fragment_picture">
+        <action
+            android:id="@+id/action_pictureFragment_to_GPLX_Fragment"
+            app:destination="@id/GPLX_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tipFragment"
+        android:name="com.example.thibanglaixe.ui.fragments.TipFragment"
+        android:label="fragment_tip"
+        tools:layout="@layout/fragment_tip" >
+        <action
+            android:id="@+id/action_tipFragment_to_GPLX_Fragment"
+            app:destination="@id/GPLX_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.thibanglaixe.ui.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_informationFragment"
+            app:destination="@id/informationFragment" />
+    </fragment>
+
 </navigation>

@@ -3,18 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/drawable/back.xml" value="0.2169230769230769" />
         <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.2203125" />
         <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/drawable/ic_baseline_chat_24.xml" value="0.2203125" />
         <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/drawable/ic_baseline_mail_outline_24.xml" value="0.2203125" />
+        <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/drawable/ic_baseline_notifications_none_24.xml" value="0.2169230769230769" />
         <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/drawable/ic_baseline_remove_24.xml" value="0.2203125" />
         <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/drawable/icon_corner.xml" value="0.20925925925925926" />
         <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/drawable/test.xml" value="0.20925925925925926" />
         <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/layout/fragment_g_p_l_x_.xml" value="0.25" />
-        <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/layout/fragment_information_.xml" value="0.23270440251572327" />
+        <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/layout/fragment_g_p_l_x_.xml" value="0.2" />
+        <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/layout/fragment_information_.xml" value="0.398406374501992" />
+        <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/layout/fragment_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/layout/fragment_picture.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/layout/fragment_test.xml" value="0.25" />
+        <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/layout/fragment_tip.xml" value="0.20416666666666666" />
         <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/layout/fragment_training_.xml" value="0.25" />
         <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/layout/item_layout.xml" value="0.25" />
-        <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/layout/item_test_layout.xml" value="0.1" />
+        <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/layout/item_test_layout.xml" value="0.25" />
         <entry key="..\:/Dev/Android/AndroiStudioProjects/ThiBangLaiXe/app/src/main/res/menu/item_navigate.xml" value="0.20416666666666666" />
       </map>
     </option>

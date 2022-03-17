@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:tools="http://schemas.android.com/tools">
+<layout>
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context=".ui.fragments.TestFragment">
+        tools:context=".ui.fragments.TipFragment">
 
         <LinearLayout
-            android:id="@+id/top_linear"
-            android:orientation="horizontal"
+            android:id="@+id/topLinear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
             <ImageButton
-                android:id="@+id/back_button_test_fragment"
+                android:id="@+id/back_button_tip_fragment"
                 android:layout_width="15dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
@@ -32,20 +33,10 @@
                 android:layout_marginTop="12dp"
                 android:layout_marginBottom="12dp"
                 android:textColor="@color/black"
-                android:text="@string/title_test_fragment"
+                android:text="@string/sa_h_nh"
+                android:textStyle="bold"
                 android:layout_gravity="center"
                 />
         </LinearLayout>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView_Test"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/top_linear"
-            tools:ignore="InvalidId" />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

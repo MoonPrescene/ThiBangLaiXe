@@ -8,7 +8,7 @@ import com.example.thibanglaixe.R
 import com.example.thibanglaixe.databinding.ItemLayoutBinding
 import com.example.thibanglaixe.model.TrainingCenters
 
-class TrainingCenterAdapters(var trainingCenters: ArrayList<TrainingCenters>):
+class TrainingCenterAdapters(private var trainingCenters: ArrayList<TrainingCenters>):
     RecyclerView.Adapter<TrainingCenterAdapters.ViewHolder>() {
     class ViewHolder(private val binding: ItemLayoutBinding) : RecyclerView.ViewHolder(binding.root){
         fun bindView(trainingCenter: TrainingCenters) {
