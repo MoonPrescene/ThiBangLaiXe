@@ -2,15 +2,17 @@ package com.example.thibanglaixe
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.thibanglaixe.databinding.ActivityMainBinding
-import com.example.thibanglaixe.ui.fragments.GPLX_Fragment
+import com.example.thibanglaixe.extension.BottomNavigationBehavior
+import com.example.thibanglaixe.ui.fragments.GPLXFragment
 import com.example.thibanglaixe.ui.fragments.InformationFragment
-import com.example.thibanglaixe.ui.fragments.Training_Fragment
+import com.example.thibanglaixe.ui.fragments.TrainingFragment
 
 
 
@@ -19,8 +21,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
     private lateinit var binding: ActivityMainBinding
 
-    private val gplxFragment = GPLX_Fragment()
-    private val trainingFragment = Training_Fragment()
+    private val gplxFragment = GPLXFragment()
+    private val trainingFragment = TrainingFragment()
     private val informationFragment = InformationFragment()
     private lateinit var fragment: Fragment
 
@@ -32,10 +34,27 @@ class MainActivity : AppCompatActivity() {
 
 
         //Way 1: using Navcontroller
+        navController = findNavController(R.id.nav_fragment)
         binding.apply {
             bottomNavigationView.setupWithNavController(
-                findNavController(R.id.nav_fragment)
+                navController
             )
+        }
+       navController.addOnDestinationChangedListener { controller, destination, arguments ->
+            when (destination.id) {
+                R.id.testFragment -> {
+                    hideBottomNavView()
+                }
+                R.id.GPLX_Fragment-> {
+                    showBottomNavView()
+                }
+                R.id.pictureFragment->{
+                    hideBottomNavView()
+                }
+                R.id.tipFragment->{
+                    hideBottomNavView()
+                }
+            }
         }
 
         //Way 2: not using Navcontroller
@@ -53,13 +72,19 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-  //  private fun setCurrentFragment(fragment: Fragment) {
+    //  private fun setCurrentFragment(fragment: Fragment) {
   //      supportFragmentManager.beginTransaction().apply {
   //          replace(R.id.nav_fragment, fragment)
-   //         addToBackStack(null)
-   //         commit()
+    //         commit()
    //     }
    // }
 
+    private fun hideBottomNavView(){
+        binding.bottomNavigationView.visibility = View.GONE
+    }
+
+    private fun showBottomNavView(){
+        binding.bottomNavigationView.visibility = View.VISIBLE
+    }
 
 }

@@ -11,7 +11,7 @@
         android:title="Đào tạo lái xe"
         />
     <item
-        android:id="@+id/informationFragment2"
+        android:id="@+id/informationFragment"
         android:icon="@drawable/ic_baseline_info_24"
         android:title="Thông tin"
         />
