@@ -4,15 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.thibanglaixe.databinding.ActivityMainBinding
-import com.example.thibanglaixe.extension.BottomNavigationBehavior
-import com.example.thibanglaixe.ui.fragments.GPLXFragment
-import com.example.thibanglaixe.ui.fragments.InformationFragment
-import com.example.thibanglaixe.ui.fragments.TrainingFragment
+
 
 
 
@@ -20,11 +16,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController
     private lateinit var binding: ActivityMainBinding
-
-    private val gplxFragment = GPLXFragment()
-    private val trainingFragment = TrainingFragment()
-    private val informationFragment = InformationFragment()
-    private lateinit var fragment: Fragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

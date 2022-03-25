@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="answer"
+            type="String" />
+        <variable
+            name="question"
+            type="com.example.thibanglaixe.model.Question" />
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:clickable="false"
+            android:focusable="false"
+            android:id="@+id/checkboxAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black">
+        </CheckBox>
+    </LinearLayout>
+</layout>

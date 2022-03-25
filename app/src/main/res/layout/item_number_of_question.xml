@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="com.example.thibanglaixe.model.Question"/>
+        <variable
+            name="question"
+            type="Question"/>
+    </data>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cardViewNumberOfQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{question.toString()}"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+    </androidx.cardview.widget.CardView>
+</layout>

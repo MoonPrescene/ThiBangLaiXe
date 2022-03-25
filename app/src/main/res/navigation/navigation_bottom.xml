@@ -44,6 +44,9 @@
             app:destination="@id/GPLX_Fragment"
             app:popUpTo="@id/GPLX_Fragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_testFragment_to_testOpenFragment"
+            app:destination="@id/testOpenFragment" />
     </fragment>
     <fragment
         android:id="@+id/pictureFragment"
@@ -71,6 +74,42 @@
         <action
             android:id="@+id/action_loginFragment_to_informationFragment"
             app:destination="@id/informationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testQuestionFragment"
+        android:name="com.example.thibanglaixe.ui.fragments.TestQuestionFragment"
+        android:label="TestQuestionFragment"
+        tools:layout="@layout/fragment_test_question">
+        <action
+            android:id="@+id/action_testQuestionFragment_to_testFragment"
+            app:destination="@id/testFragment" />
+        <action
+            android:id="@+id/action_testQuestionFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testOpenFragment"
+        android:name="com.example.thibanglaixe.ui.fragments.TestOpenFragment"
+        android:label="TestOpenFragment"
+        tools:layout="@layout/fragment_test_open">
+        <action
+            android:id="@+id/action_testOpenFragment_to_testQuestionFragment"
+            app:destination="@id/testQuestionFragment" />
+        <action
+            android:id="@+id/action_testOpenFragment_to_testFragment"
+            app:destination="@id/testFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.thibanglaixe.ui.fragments.ResultFragment"
+        android:label="ResultFragment"
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_resultFragment_to_testOpenFragment"
+            app:destination="@id/testOpenFragment" />
+        <action
+            android:id="@+id/action_resultFragment_to_testFragment"
+            app:destination="@id/testFragment" />
     </fragment>
 
 </navigation>

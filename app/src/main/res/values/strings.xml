@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">ThiBangLaiXe</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="_50_c_u_hay_sai">50 câu hay sai</string>
     <string name="thi_thử">Thi thử</string>
@@ -31,4 +30,14 @@
     <string name="phi_n_b_n_pro">Phiên bản Pro</string>
     <string name="n_ng_c_p">Nâng cấp</string>
     <string name="ng_nh_p">Đăng nhập</string>
+    <string name="n_p_b_i">nộp bài</string>
+    <string name="c_u_tr_c">Câu trước</string>
+    <string name="title_open_test">Bài thi thử lý thuyết GPLX hạng A1</string>
+    <string name="diem_liet">Câu hỏi điểm liệt: Sai một câu bất kỳ trong nhóm câu điểm liệt, học viên sẽ trượt bài thi</string>
+    <string name="start">Bắt đầu làm bài</string>
+    <string name="so_cau_toi_thieu">Số câu đúng tối thiểu: 21/25</string>
+    <string name="c_u_sau">Câu sau</string>
+    <string name="result">Kết quả thi thử</string>
+    <string name="testAgain">Thi lại</string>
+    <string name="all">Tất cả</string>
 </resources>
